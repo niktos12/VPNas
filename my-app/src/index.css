@@ -3,7 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer utilities {
+  .border-gradient {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #0cbaf1, #e95ce9);
+    border-image-slice: 1;
+  }
+}
+.border-white-gradient {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+}
 :root {
   font-family: "Chakra Petch", sans-serif;
   line-height: 1.5;
@@ -11,18 +26,13 @@
   max-width: 1440px;
   margin: auto;
   display: flex;
+  overflow: hidden;
   /* align-items: center; */
   justify-content: center;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #18181b;
 }
-
 
 @layer base {
   :root {

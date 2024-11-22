@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
 
             </div>
-            <Button variant={'outline'} size={"lg"} className="h-[52px] bg-transparent rounded-none border-top-gradient from-[#0CBAF1] to-[#E95CE9]">Contact us</Button>
+            <Button variant={'outline'} size={"lg"} className="border-gradient !border h-[52px] bg-transparent rounded-none">Contact us</Button>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import Main from "./components/ui/sections/Main"
+import Main from "./components/ui/pages/Main/Main"
 
 function App() {
 
