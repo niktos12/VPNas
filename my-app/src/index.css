@@ -10,6 +10,13 @@
     border-image-slice: 1;
   }
 }
+/* @layer utilities {
+  .gradient-text {
+    background: linear-gradient(to right, #0cbaf1, #e95ce9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+} */
 .border-white-gradient {
   border: 1px solid transparent;
   border-image: linear-gradient(
@@ -26,14 +33,20 @@
   max-width: 1440px;
   margin: auto;
   display: flex;
-  overflow: hidden;
+  scroll-behavior: smooth;
   /* align-items: center; */
   justify-content: center;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #18181b;
 }
-
+/* ::-webkit-scrollbar {
+  width: 8px;
+} */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #0cbaf1 !important;
+}
 @layer base {
   :root {
     --radius: 0.5rem;

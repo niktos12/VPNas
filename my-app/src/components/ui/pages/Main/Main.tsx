@@ -7,13 +7,19 @@ import Line from "./assets/Element.svg";
 import Video from "./assets/Video.svg";
 import { Button } from "../../button";
 import Cards from "./components/Cards";
+import AboutUs from "./components/AboutUs";
+import Service from "./components/Service";
 const Main = () => {
   return (
     <div className="flex flex-col items-center container">
       <Header />
       <img
-        className="absolute -z-10 overflow-hidden -left-0 top-[248px]"
+        className="absolute -z-10 overflow-hidden -left-0 top-[248px] pointer-events-none"
         src={Lines}
+      />
+      <img
+        src={Light}
+        className="absolute -top-10 -z-10 -right-0 overflow-hidden  pointer-events-none"
       />
       <div className="flex flex-row relative gap-32">
         <div className="flex flex-col gap-8 items-start">
@@ -43,15 +49,13 @@ const Main = () => {
             <img src={Video} className="ml-16" />
           </div>
         </div>
-        <div className="relative">
+        <div className="">
           <img src={Person} className="" />
-          <img
-            src={Light}
-            className="absolute top-0 -z-10 -right-1/4 overflow-hidden scale-150"
-          />
         </div>
       </div>
-      <Cards/>
+      <Cards />
+      <AboutUs />
+      <Service/>
     </div>
   );
 };
