@@ -6,44 +6,6 @@ import Comment from "../assets/g1944.svg";
 import Gamepad from "../assets/g4041.svg";
 import Calendar from "../assets/g3720.svg";
 import Masks from "../assets/g3977.svg";
-const services = [
-  {
-    title: "VR Development",
-    description:
-      "From concept to creation, our team of VR developers will bring your vision to life.",
-    icon: "path-to-vr-development-icon.svg",
-  },
-  {
-    title: "VR Games",
-    description:
-      "We offer a wide selection of VR games that are suitable for players of all ages and skill levels.",
-    icon: "path-to-vr-games-icon.svg",
-  },
-  {
-    title: "VR Design",
-    description:
-      "Our talented VR designers will create immersive and engaging environments that will captivate your audience.",
-    icon: "path-to-vr-design-icon.svg",
-  },
-  {
-    title: "VR Consulting",
-    description:
-      "Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations.",
-    icon: "path-to-vr-consulting-icon.svg",
-  },
-  {
-    title: "VR Events",
-    description:
-      "Make your next event unforgettable with our VR event services.",
-    icon: "path-to-vr-events-icon.svg",
-  },
-  {
-    title: "VR Entertainment",
-    description:
-      "Create a VR escape room, or offer VR experiences at a theme park, we have the expertise and experience to make it happen.",
-    icon: "path-to-vr-entertainment-icon.svg",
-  },
-];
 
 const Service: React.FC = () => {
   return (
@@ -54,7 +16,7 @@ const Service: React.FC = () => {
             <h2 className="uppercase bg-gradient-to-r from-[#0CBAF1] to-[#E95CE9] bg-clip-text text-transparent tracking-[4px] font-medium">
               Our Service
             </h2>
-            <h1 className="text-5xl font-semibold">Our Service</h1>
+            <h1 className="text-5xl font-semibold leading-[58px]">Our Service</h1>
           </div>
 
           <p className="mt-4 text-[#D1D1D1] max-w-[625px] mx-auto font-light">

@@ -9,6 +9,9 @@ import { Button } from "../../button";
 import Cards from "./components/Cards";
 import AboutUs from "./components/AboutUs";
 import Service from "./components/Service";
+import ChooseUs from "./components/ChooseUs";
+import GetStarted from "./components/GetStarted";
+import Testimonial from "./components/Testimonial";
 const Main = () => {
   return (
     <div className="flex flex-col items-center container">
@@ -23,7 +26,7 @@ const Main = () => {
       />
       <div className="flex flex-row relative gap-32">
         <div className="flex flex-col gap-8 items-start">
-          <h1 className="capitalize font-semibold text-[64px]">
+          <h1 className="capitalize font-semibold text-[64px] leading-[83px]">
             Immerse Yourself
             <br /> in Virtual Reality
           </h1>
@@ -55,7 +58,10 @@ const Main = () => {
       </div>
       <Cards />
       <AboutUs />
-      <Service/>
+      <Service />
+      <ChooseUs />
+      <GetStarted />
+      <Testimonial />
     </div>
   );
 };
