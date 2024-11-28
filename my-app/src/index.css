@@ -17,6 +17,13 @@
     -webkit-text-fill-color: transparent;
   }
 } */
+.image-transition {
+  transition: all 300ms ease-in-out;
+}
+
+.image-transition:hover {
+  background: linear-gradient(to right, #0CBAF1, #E95CE9);
+}
 .border-white-gradient {
   border: 1px solid transparent;
   border-image: linear-gradient(
@@ -25,6 +32,17 @@
     rgba(255, 255, 255, 0)
   );
   border-image-slice: 1;
+}
+.border-white-gradient-circle {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  border-image-slice: 1;
+  border-radius: 9999px;
+  overflow: hidden;
 }
 :root {
   font-family: "Chakra Petch", sans-serif;

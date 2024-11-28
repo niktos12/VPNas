@@ -14,7 +14,7 @@ import GetStarted from "./components/GetStarted";
 import Testimonial from "./components/Testimonial";
 const Main = () => {
   return (
-    <div className="flex flex-col items-center container">
+    <div className="flex flex-col items-center container ">
       <Header />
       <img
         className="absolute -z-10 overflow-hidden -left-0 top-[248px] pointer-events-none"
