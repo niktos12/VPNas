@@ -12,6 +12,8 @@ import Service from "./components/Service";
 import ChooseUs from "./components/ChooseUs";
 import GetStarted from "./components/GetStarted";
 import Testimonial from "./components/Testimonial";
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 const Main = () => {
   return (
     <div className="flex flex-col items-center container ">
@@ -62,6 +64,8 @@ const Main = () => {
       <ChooseUs />
       <GetStarted />
       <Testimonial />
+      <Pricing/>
+      <Footer/>
     </div>
   );
 };
