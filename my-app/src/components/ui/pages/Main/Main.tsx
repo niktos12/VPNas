@@ -19,6 +19,7 @@ import Subscribe from "./components/Subscribe";
 import Articles from "./components/Articles";
 import AnimateOnScroll from "./components/AnimateOnScroll";
 import waves from "../../../../assets/Clip path group.svg";
+import withTransition from "./components/withTransition";
 const Main = () => {
   return (
     <div className="flex flex-col items-center container ">
@@ -101,4 +102,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default withTransition(Main);
