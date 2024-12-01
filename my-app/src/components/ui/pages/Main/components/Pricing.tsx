@@ -3,7 +3,7 @@ import bg from "../assets/BG (1).svg";
 import icon from "../assets/Icon.svg";
 const Pricing = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full ">
       <div className="flex flex-col gap-3 mt-[100px] items-start">
         <h3 className="bg-gradient-to-r from-[#0CBAF1] to-[#E95CE9] bg-clip-text text-transparent tracking-[4px] font-medium">
           OUR PRICING

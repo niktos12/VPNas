@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import video from "../assets/Video (3).svg";
 const GetStarted = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-12">
+    <div className="flex flex-col items-center justify-center gap-12 ">
       <div className="flex flex-col gap-3 items-center">
         <h3 className="bg-gradient-to-r from-[#0CBAF1] to-[#E95CE9] bg-clip-text text-transparent tracking-[4px] font-medium">
           HOW TO GET STARTED

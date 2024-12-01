@@ -25,7 +25,7 @@ const CommentPopover: React.FC<CommentPopoverProps> = ({
       <PopoverTrigger asChild>
         <img
           src={imageUrl}
-          className={`absolute ${classname} transition-all duration-300 p-2 bg-gradient-to-r from-slate-50 to-slate-600 hover:bg-gradient-to-r hover:from-[#0CBAF1] hover:to-[#E95CE9] z-30 cursor-pointer rounded-full `}
+          className={`absolute ${classname} transition-all duration-300 p-2 border-[#FFFFFF4D] border hover:bg-gradient-to-r hover:from-[#0CBAF1] hover:to-[#E95CE9] z-30 cursor-pointer rounded-full `}
         />
       </PopoverTrigger>
       <PopoverContent className="w-80 bg-[#252532C4]" side="right">

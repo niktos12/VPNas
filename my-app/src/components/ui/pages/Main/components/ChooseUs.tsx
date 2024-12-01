@@ -6,11 +6,11 @@ import {
 } from "@/components/ui/accordion";
 import Person from "../assets/Image2.svg";
 import bg from "../assets/Image (1).svg";
-import video from '../assets/Video (2).svg'
+import video from "../assets/Video (2).svg";
 
 const ChooseUs = () => {
   return (
-    <div className="flex flex-row gap-20 items-center mt-20 mb-40">
+    <div className="flex flex-row gap-20 items-center mt-20 mb-40 ">
       <div className="flex flex-col gap-3 items-start max-w-[541.5px]">
         <h3 className="bg-gradient-to-r from-[#0CBAF1] to-[#E95CE9] bg-clip-text text-transparent tracking-[4px] font-medium">
           WHY CHOOSE US
@@ -60,7 +60,7 @@ const ChooseUs = () => {
       <div className="relative">
         <img src={Person} />
         <img src={bg} className="absolute -z-10 bottom-0 right-24" />
-        <img src={video} className="z-10 absolute -bottom-10 right-20"/>
+        <img src={video} className="z-10 absolute -bottom-10 right-20" />
       </div>
     </div>
   );

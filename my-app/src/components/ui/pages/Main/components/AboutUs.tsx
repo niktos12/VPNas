@@ -5,7 +5,7 @@ import check from "../assets/check-box (1).svg";
 import video from "../assets/Video (1).svg";
 const AboutUs = () => {
   return (
-    <div className="relative flex flex-row gap-20 mt-32 w-full justify-center items-center">
+    <div className="relative flex flex-row gap-20 mt-32 w-full justify-center items-center ">
       <div className="relative">
         <img src={bg} className="absolute -left-2 -z-10 bottom-0" />
         <img src={Person} />

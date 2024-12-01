@@ -3,7 +3,7 @@ import Cube from "../assets/Title & Desc (1).svg";
 import Person from "../assets/Title & Desc (2).svg";
 const Cards = () => {
   return (
-    <div className="flex flex-row gap-[50px] px-16 py-12 bg-[#252532] border border-white-gradient">
+    <div className="flex flex-row gap-[50px] px-16 py-12 bg-[#252532] border border-white-gradient ">
       <div className="flex flex-col gap-[42px] items-start">
         <img src={VR} />
         <div className="flex flex-col gap-3">

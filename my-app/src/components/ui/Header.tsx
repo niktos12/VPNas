@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -9,10 +10,35 @@ import {
 import { Button } from "./button.tsx";
 import Lines from "../../assets/Clip path group.svg";
 import Logo from "../../assets/Frame 22.svg";
+
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-row items-center gap-60 py-8 w-full justify-center">
-      <img src={Lines} className="absolute -z-10 right-0 top-0" />
+    <div
+      className={`flex flex-row items-center gap-60 py-8 w-full justify-center transition-all duration-300 ${
+        isScrolled
+          ? "sticky top-0  z-50 bg-blur backdrop-blur-md bg-opacity-80"
+          : ""
+      }`}
+    >
+      {/* <img src={Lines} className="absolute -z-10 right-0 top-0" /> */}
       <img src={Logo} />
       <div className="flex flex-row items-center justify-center gap-16">
         <a href="#" className="no-underline text-white font-medium text-md">
@@ -61,4 +87,5 @@ const Header = () => {
     </div>
   );
 };
+
 export default Header;

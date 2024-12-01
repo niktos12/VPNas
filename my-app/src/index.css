@@ -20,9 +20,17 @@
 .image-transition {
   transition: all 300ms ease-in-out;
 }
-
+.swiper-pagination-bullet {
+  width: 9px !important;
+  height: 3px !important;
+  border-radius: 32px !important;
+  background-color: #ffffff4f !important;
+}
+.swiper-pagination-bullet-active {
+  width: 17px !important;
+}
 .image-transition:hover {
-  background: linear-gradient(to right, #0CBAF1, #E95CE9);
+  background: linear-gradient(to right, #0cbaf1, #e95ce9);
 }
 .border-white-gradient {
   border: 1px solid transparent;
@@ -58,13 +66,51 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #18181b;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 8px;
-} */
+}
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: #0cbaf1 !important;
+  background: linear-gradient(to bottom, #0cbaf1, #e95ce9) !important;
 }
+.spiner {
+  animation: spiner-rotate 12s infinite cubic-bezier(0.36, 0, 0, 1);
+  transform-origin: center;
+}
+.circle {
+  animation: rail-pulse 1.5s infinite alternate cubic-bezier(0.36, 0, 0, 1);
+  transform-origin: center;
+}
+
+@keyframes spiner-rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(90deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(270deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;

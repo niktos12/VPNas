@@ -21,7 +21,7 @@ const Testimonial = () => {
         <div className="absolute w-[1084px] h-[1084px] rounded-full border border-gray-700 -z-10"></div>
         <div className="absolute w-[899px] h-[899px] rounded-full border border-gray-700 -z-10"></div>
         <div className="absolute w-[736px] h-[736px] rounded-full border border-gray-700 -z-10"></div>
-        <div className="absolute -z-10 w-[560px] h-[560px] rounded-full border"></div>
+        <div className="absolute -z-10 w-[560px] h-[560px] rounded-full border border-gray-700 "></div>
       </div>
       <CommentPopover
         imageUrl={comment}

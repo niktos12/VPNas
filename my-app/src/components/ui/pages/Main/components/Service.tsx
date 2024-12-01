@@ -9,7 +9,7 @@ import Masks from "../assets/g3977.svg";
 
 const Service: React.FC = () => {
   return (
-    <section className=" text-white py-16 px-8 mt-32">
+    <section className=" text-white py-16 px-8 mt-32 ">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-row gap-20 mb-12 items-center">
           <div className="flex flex-col gap-4 items-start">
