@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import VR from "../assets/14.svg";
-import arrow from "../assets/next 1.svg";
-import Lines from "../../../../../assets/Assets.svg";
+import VR from "../pages/assets/14.svg";
+import arrow from "../pages/assets/next 1.svg";
+import Lines from "../assets/Assets.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import slide from "../assets/swiper.svg";
+import slide from "../pages/assets/swiper.svg";
+import 'swiper/css'
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 const Articles = () => {
   const cards = Array.from({ length: 20 }, (_, index) => ({ id: index }));
   return (

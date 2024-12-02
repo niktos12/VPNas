@@ -1,30 +1,30 @@
-import Header from "../../Header";
+import Header from "@/components/ui/Header";
 import Light from "./assets/Light.svg";
 import Person from "./assets/Image.svg";
 import Clients from "./assets/Happy Client.svg";
-import Lines from "../../../../assets/Assets.svg";
+import Lines from "../assets/Assets.svg";
 import Line from "./assets/Element.svg";
 import Video from "./assets/Video.svg";
-import { Button } from "../../button";
-import Cards from "./components/Cards";
-import AboutUs from "./components/AboutUs";
-import Service from "./components/Service";
-import ChooseUs from "./components/ChooseUs";
-import GetStarted from "./components/GetStarted";
-import Testimonial from "./components/Testimonial";
-import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
-import Trust from "./components/Trust";
-import Subscribe from "./components/Subscribe";
-import Articles from "./components/Articles";
-import AnimateOnScroll from "./components/AnimateOnScroll";
-import waves from "../../../../assets/Clip path group.svg";
-import withTransition from "./components/withTransition";
+import { Button } from "@/components/ui/button";
+import Cards from "@/components/Cards";
+import AboutUs from "../components/AboutUs";
+import Service from "@/components/Service";
+import ChooseUs from "@/components/ChooseUs";
+import GetStarted from "@/components/GetStarted";
+import Testimonial from "@/components/Testimonial";
+import Pricing from "@/components/Pricing";
+import Footer from "../components/ui/Footer";
+import Trust from "@/components/Trust";
+import Subscribe from "@/components/Subscribe";
+import Articles from "@/components/Articles";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
+import waves from "../assets/Clip path group.svg";
+import withTransition from "@/components/withTransition";
 const Main = () => {
   return (
     <div className="flex flex-col items-center container ">
       <img src={waves} className="absolute -z-10 right-0 top-0" />
-      <Header current="home"/>
+      <Header current={"home"} />
       <img
         className="absolute -z-10 overflow-hidden -left-0 top-[248px] pointer-events-none"
         src={Lines}
