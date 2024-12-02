@@ -6,10 +6,6 @@ import Lines from "../assets/Assets.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import slide from "../pages/assets/swiper.svg";
-import 'swiper/css'
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 const Articles = () => {
   const cards = Array.from({ length: 20 }, (_, index) => ({ id: index }));
   return (
